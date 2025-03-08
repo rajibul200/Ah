@@ -1,0 +1,9 @@
+public_html/
+├── css/
+│   └── style.css
+├── js/
+│   └── scripts.js
+├── images/
+│   └── (all images)
+├── index.html
+└── (calculator pages)
