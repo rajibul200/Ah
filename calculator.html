@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan EMI Calculator | Calculator Suite</title>
+    <link rel="canonical" href="https://yourdomain.com/emi-calculator.html">
+    <meta name="description" content="Calculate Equated Monthly Installments for home, car, and personal loans">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Calculate Loan EMI",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "text": "Enter loan amount"
+            },
+            {
+                "@type": "HowToStep",
+                "text": "Input interest rate"
+            },
+            {
+                "@type": "HowToStep",
+                "text": "Select loan tenure"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <div class="calculator-form">
+        <h1>Loan EMI Calculator</h1>
+        <form id="emiCalculator">
+            <div class="input-group">
+                <label>Loan Amount (₹)</label>
+                <input type="number" id="principal" required>
+            </div>
+            <div class="input-group">
+                <label>Annual Interest Rate (%)</label>
+                <input type="number" id="rate" step="0.01" required>
+            </div>
+            <div class="input-group">
+                <label>Loan Tenure (Years)</label>
+                <input type="number" id="years" required>
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
